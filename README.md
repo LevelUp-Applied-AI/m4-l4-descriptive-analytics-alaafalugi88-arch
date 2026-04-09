@@ -43,3 +43,57 @@ All plots should be saved to `output/` as PNG files.
 This repository is provided for educational use only. See [LICENSE](LICENSE) for terms.
 
 You may clone and modify this repository for personal learning and practice, and reference code you wrote here in your professional portfolio. Redistribution outside this course is not permitted.
+
+# FINDINGS — Student Performance Analysis
+
+## Dataset Overview
+The dataset contains approximately 2000 student records with variables including GPA, study hours, attendance, and scholarship status.
+
+Some missing values were observed:
+- commute_minutes (~10%) → filled with median
+- study_hours_weekly (~5%) → dropped
+- scholarship (~20%) → filled with "None"
+
+---
+
+## Distribution Insights
+- GPA is slightly left-skewed, with most students between 2.5 and 3.5.
+- Study hours show moderate variation across students.
+- Attendance is generally high, indicating strong class participation.
+- Box plots show variation in GPA across departments.
+
+---
+
+## Correlation Analysis
+- Study hours and GPA show a positive correlation.
+- Attendance also appears moderately correlated with GPA.
+- These relationships suggest that effort and engagement influence academic performance.
+
+---
+
+## Hypothesis Testing
+
+### Internship vs GPA (T-Test)
+The t-test shows a statistically significant difference in GPA between students with and without internships (t = 13.56, p < 0.001).
+
+This indicates that internship participation is associated with higher academic performance.
+
+---
+
+### Scholarship vs Department (Chi-Square)
+The chi-square test shows no significant relationship between scholarship type and department (χ² = 17.14, p = 0.377).
+
+This suggests scholarship distribution is independent of department.
+
+---
+
+## Recommendations
+
+1. Encourage internship participation, as it is associated with higher GPA.
+2. Promote study habits and attendance, as they correlate with better academic performance.
+3. Review scholarship allocation strategies to ensure alignment with academic performance if desired.
+
+---
+
+## Notes
+Correlation does not imply causation. Observed relationships should be further validated with controlled studies.
